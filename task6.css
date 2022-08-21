@@ -1,0 +1,827 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .............start section....... */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-color: brown;
+    background-image: url(./img/pexels-gustavo-rodrigues-1755288.jpg);
+
+    animation-name: changimg;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    margin-bottom: 50px;
+}
+
+@keyframes changimg {
+    25% {
+        background-image: url(./img/pexels-tom-balabaud-1579739.jpg);
+    }
+}
+
+/* ........... startnav....... */
+.main .navpar {
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(100deg, rgba(253, 238, 164, 0.722), rgba(249, 133, 208, 0.579));
+    position: relative;
+
+}
+
+.main .navpar ul li {
+    float: left;
+    margin: 20px 5px;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+.main .navpar ul li:hover {
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+
+
+.main .navpar ul li a {
+    font-size: 20px;
+    color: rgb(194, 24, 228);
+    text-shadow: 1px 1px 1px rgb(244, 168, 234);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-line: none;
+}
+
+.main .navpar ul li a:hover {
+    color: brown;
+    font-size: 25px;
+
+}
+
+.main .navpar ul li span {
+    font-size: 20px;
+    color: rgb(27, 128, 128);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 1px rgb(130, 233, 254);
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+
+.main .navpar .b1 {
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    border: blue solid 2px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+}
+
+.main .navpar .b2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(6, 183, 18);
+    border: rgb(30, 168, 15) solid 2px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    padding: 10px;
+    position: absolute;
+    right: 110px;
+}
+
+/* ........... endnav....... */
+
+.main .paragraph {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+
+}
+
+.main .paragraph .text {
+    position: absolute;
+    bottom: 40px;
+    left: 500px;
+}
+
+.main .paragraph h1 {
+    font-size: 60px;
+    margin: 10px;
+    padding: 5px;
+    color: rgb(147, 52, 237);
+    text-shadow: 3px 2px 2px rgb(210, 178, 245);
+    letter-spacing: 10px;
+}
+
+.main .paragraph p {
+    color: azure;
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px rgb(217, 187, 242);
+    letter-spacing: 20px;
+}
+
+/* .............end section1....... */
+
+
+
+/* ......................start media section1 ....*/
+/* for tablet */
+@media(max-width : 768px){
+    .main .navpar ul li a {
+        font-size: 12px;
+    }
+
+    .main .paragraph .text {
+        left: 150px;
+    }
+
+    .main .paragraph h1 {
+        font-size: 25px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .main .paragraph p {
+        font-size: 12px;
+        margin: 3px;
+        padding: 3px;
+    }
+
+}
+
+/* for mobile */
+@media(max-width :600px){
+    .main .navpar {
+        display: none;
+
+    }
+
+    .main .paragraph .text {
+        bottom: 10px;
+        left: 85px;
+    }
+
+    .main .paragraph h1 {
+        font-size: 25px;
+        margin: 2px;
+        padding: 2px;
+        letter-spacing: 5px;
+
+    }
+
+    .main .paragraph p {
+        font-size: 15px;
+        margin: 2px;
+        padding: 2px;
+        letter-spacing: 5px;
+    }
+}
+
+
+
+/* ......................end media section1 ....*/
+
+
+/* <!-- ............ start about us style--> */
+.about {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-color: rgb(243, 226, 205);
+    margin-bottom: 50px;
+}
+
+.about .aboutus {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(69, 42, 42);
+    text-shadow: 2px 3px 3px rgb(107, 89, 66);
+    margin: 5px 5px;
+}
+
+.about .hr1 {
+    width: 60%;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgb(101, 67, 67), rgb(127, 97, 64), rgb(82, 62, 62));
+    height: 10px;
+    border-radius: 50%;
+}
+
+.about .hr2 {
+    width: 50%;
+    margin: 8px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgb(104, 71, 71);
+}
+
+.about .hr3 {
+    width: 40%;
+    margin: 8px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgb(104, 71, 71);
+}
+
+.about .contant {
+    display: flex;
+}
+
+.about .contant .contant1 {
+    width: 45%;
+    height: 400px;
+}
+
+.about .contant .contant1 .imgcontant {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 5px;
+}
+
+.about .contant .contant1 .imgcontant img {
+    width: 750px;
+    height: 750px;
+}
+
+.about .contant .textcontant {
+    width: 50%;
+    height: 600px;
+    margin: 50px 60px;
+    background-color: rgba(253, 254, 254, 0.299);
+
+}
+
+.about .contant .textcontant div {
+    text-align: center;
+    margin: 30px 20px;
+    padding: 10px;
+}
+
+.about .contant .textcontant div h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(69, 42, 42);
+    text-shadow: 2px 3px 3px rgb(107, 89, 66);
+    margin: 20px 5px;
+}
+
+.about .contant .textcontant div h1:hover {
+    font-size: 45px;
+    color: brown;
+}
+
+.about .contant .textcontant div p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(107, 89, 66);
+
+}
+
+
+/* <!-- ............ end about us style--> */
+
+/* ......................start media section2 ....*/
+/* for tablet */
+@media(max-width : 768px){
+    .about .contant .contant1 .imgcontant img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .about .contant .contant1 .imgcontant img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about .contant .textcontant {
+        width: 50%;
+        height: 455px;
+        margin: 20px 60px;
+    }
+
+    .about .contant .textcontant div {
+        margin: 10px 10px;
+        padding: 5px;
+    }
+
+    .about .contant .textcontant div h1 {
+        font-size: 25px;
+        text-shadow: 2px 2px 2px rgb(107, 89, 66);
+        margin: 10px 5px;
+    }
+
+    .about .contant .textcontant div p {
+        font-size: 15px;
+    }
+}
+
+/* .........................for mobile */
+@media(max-width :600px){
+    .about .contant {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about .contant .contant1 {
+        width: 45%;
+        height: 185px;
+        margin: 3px 40px;
+    }
+
+    .about .contant .contant1 .imgcontant img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .about .contant .textcontant {
+        width: 100%;
+        height: 250px;
+        margin: 150px 5px;
+    }
+
+    .about .contant .textcontant div {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .about .contant .textcontant div h1 {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(69, 42, 42);
+        text-shadow: 2px 3px 3px rgb(107, 89, 66);
+        margin: 10px 5px;
+    }
+
+    .about .contant .textcontant div h1:hover {
+        font-size: 22px;
+        color: brown;
+    }
+
+    .about .contant .textcontant div p {
+        font-size: 10px;
+        text-shadow: 1px 1px 1px rgb(107, 89, 66);
+
+    }
+
+    .about .aboutus {
+        text-align: center;
+        font-size: 25px;
+        text-shadow: 2px 2px 2px rgb(107, 89, 66);
+    }
+
+    .about .hr1 {
+        width: 50%;
+        margin: 3px auto;
+        height: 3px;
+        border-radius: 30%;
+    }
+
+    .about .hr2 {
+        width: 40%;
+        margin: 5px auto;
+        border-radius: 50%;
+        border-top: 3px dashed rgb(104, 71, 71);
+    }
+
+    .about .hr3 {
+        width: 30%;
+        margin: 3px auto;
+        border-radius: 20%;
+        border-top: 3px dashed rgb(104, 71, 71);
+    }
+
+}
+
+/* <!-- ............ start gallary style..........--> */
+.gallary {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-color: rgb(243, 226, 205);
+    margin-bottom: 50px;
+}
+
+.gallary .gallarytitle {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(69, 42, 42);
+    text-shadow: 2px 3px 3px rgb(107, 89, 66);
+    margin: 10px 5px;
+}
+
+.gallary .hr4 {
+    width: 60%;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgb(101, 67, 67), rgb(127, 97, 64), rgb(82, 62, 62));
+    height: 10px;
+    border-radius: 50%;
+}
+
+.gallary .hr5 {
+    width: 50%;
+    margin: 8px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgb(104, 71, 71);
+}
+
+.gallary .hr6 {
+    width: 40%;
+    margin: 8px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgb(104, 71, 71);
+}
+
+.gallary .gallery-contant {
+    width: 50%;
+    margin: auto;
+}
+
+.gallary .gallery-contant .head {
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 5px;
+    padding: 5px;
+}
+
+
+.gallary .gallery-contant .head .head1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid brown;
+    background-color: rgb(65, 48, 48);
+    margin: auto;
+    padding: 5px;
+
+}
+
+.gallary .gallery-contant .head .head1 h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.gallary .gallery-contant .gallerycontent {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallary .gallery-contant .gallerycontent .image {
+    width: 30%;
+    margin: 10px 5px;
+    box-shadow: 10px 10px 10px rgb(109, 82, 82);
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallary .gallery-contant .gallerycontent .image .caption {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(165, 42, 42, 0.63); */
+    /* border: 2px solid white;
+    border-radius: 20px; */
+    position: absolute;
+    transition: all 1s;
+    top: 100%;
+    right: 100%;
+}
+
+.gallary .gallery-contant .gallerycontent .image .caption h1 {
+    color: rgb(234, 229, 229);
+    font-size: 20px;
+    background-color: brown;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gallary .gallery-contant .gallerycontent .image .caption:hover h1 {
+    font-size: 25px;
+    color: rgb(240, 255, 107);
+}
+
+.gallary .gallery-contant .gallerycontent .image .caption p {
+    color: rgb(98, 30, 30);
+    font-size: 25px;
+    /* background-color: rgb(228, 131, 131); */
+    /* border: 1px solid rgb(102, 25, 25);
+    border-radius: 5px; */
+    text-align: center;
+}
+
+.gallary .gallery-contant .gallerycontent .image .caption p {
+    color: rgb(123, 0, 0);
+    font-size: 30px;
+}
+
+.gallary .gallery-contant .gallerycontent .image:hover .caption {
+    top: 0%;
+    right: 0%;
+}
+
+.gallary .gallery-contant .gallerycontent .image .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* <!-- ............ end gallary style..........--> */
+/* ......................start media section2 ....*/
+/* for tablet */
+@media(max-width : 768px){
+    .gallary .gallarytitle {
+        text-align: center;
+        padding: 5px 2px;
+        font-size: 30px;
+        text-shadow: 2px 3px 3px rgb(107, 89, 66);
+        margin: 10px 5px;
+    }
+
+}
+
+/* .........................for mobile */
+@media(max-width :600px){
+    .gallary .gallarytitle {
+        padding: 5px 2px;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px rgb(107, 89, 66);
+        margin: 20px 5px;
+    }
+
+    .gallary .hr4 {
+        width: 50%;
+        margin: 10px auto;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    .gallary .hr5 {
+        width: 40%;
+        margin: 4px auto;
+        border-top: 3px dashed rgb(104, 71, 71);
+    }
+
+    .gallary .hr6 {
+        width: 30%;
+        margin: 3px auto;
+        border-radius: 50%;
+        border-top: 2px dashed rgb(104, 71, 71);
+    }
+
+    .gallary .gallery-contant {
+        width: 100%;
+    }
+
+    .gallary .gallery-contant .head {
+        border-bottom: 1px solid white;
+        margin: 50px 5px;
+        padding: 5px;
+    }
+
+    .gallary .gallery-contant .head .head1 {
+        width: 100px;
+        height: 20px;
+        border: 2px solid brown;
+        padding: 3px;
+    }
+
+    .gallary .gallery-contant .head .head1 h1 {
+        font-size: 17px;
+    }
+
+    .gallary .gallery-contant .gallerycontent {
+        width: 100%;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .gallary .gallery-contant .gallerycontent .image {
+        width: 37%;
+        margin: 10px 5px;
+        box-shadow: 10px 10px 10px rgb(109, 82, 82);
+        border: 2px solid white;
+    }
+
+    .gallary .gallery-contant .gallerycontent .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .gallary .gallery-contant .gallerycontent .image .caption h1 {
+        font-size: 13px;
+    }
+
+    .gallary .gallery-contant .gallerycontent .image .caption:hover h1 {
+        font-size: 15px;
+        color: rgb(240, 255, 107);
+    }
+
+    .gallary .gallery-contant .gallerycontent .image .caption p {
+        font-size: 15px;
+    }
+
+    .gallary .gallery-contant .gallerycontent .image .caption p {
+        font-size: 20px;
+    }
+}
+
+/* ......................end media section2 ......*/
+
+/* ......................start section contact us ......*/
+
+.contact-us {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-color: rgb(190, 169, 146);
+    margin-bottom: 50px;
+}
+
+.contact-us .contactustitle {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(69, 42, 42);
+    text-shadow: 2px 3px 3px rgb(107, 89, 66);
+    margin: 10px 5px;
+}
+
+.contact-us .hr7 {
+    width: 60%;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgb(101, 67, 67), rgb(127, 97, 64), rgb(82, 62, 62));
+    height: 10px;
+    border-radius: 50%;
+}
+
+.contact-us .hr8 {
+    width: 50%;
+    margin: 8px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgb(104, 71, 71);
+}
+
+.contact-us .hr9 {
+    width: 40%;
+    margin: 8px auto;
+    border-radius: 50%;
+    border-top: 5px dashed rgb(104, 71, 71);
+}
+
+.contact-us .contantcontactus {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.contact-us .contantcontactus .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.contact-us .contantcontactus .form .contantform {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+}
+
+.contact-us .contantcontactus .form .contantform .title h1 {
+    font-size: 30px;
+    position: absolute;
+    left: 130px;
+    top: 3px;
+    color: rgb(99, 82, 56);
+    font-weight: bold;
+
+}
+.contact-us .contantcontactus .form .contantform .smallform {
+    position: absolute;
+    left: 5%;
+    top: 50px;
+}
+.contact-us .contantcontactus .form .contantform .smallform .label1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2px auto;
+    padding: 5px;
+    color: rgb(117, 85, 37);
+    font-weight: lighter;    
+}
+.contact-us .contantcontactus .form .contantform .smallform .in input{
+    width: 48%;
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    color: rgb(48, 48, 48);
+    border: 1px solid rgb(240, 232, 212); 
+    border-radius: 5px;
+margin-bottom: 10px;
+}
+.contact-us .contantcontactus .form .contantform .smallform .adress input {
+    width: 48%;
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    color: rgb(48, 48, 48);
+    border: 1px solid rgb(240, 232, 212); 
+    border-radius: 5px;
+margin-bottom: 10px;  
+}
+.contact-us .contantcontactus .form .contantform .smallform .signin button{
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+    color: rgb(255, 245, 188);
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+.contact-us .contantcontactus .map {
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+}
+
+
+
+
+/* ......................endsection contact us ......*/
+
+/* ......................start media section2 ....*/
+/* .........................for mobile */
+@media(max-width :600px){
+    .contact-us .contactustitle {
+        padding: 5px 2px;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px rgb(107, 89, 66);
+        margin: 20px 5px;
+    }
+
+    .contact-us .hr7 {
+        width: 50%;
+        margin: 10px auto;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    .contact-us .hr8 {
+        width: 40%;
+        margin: 4px auto;
+        border-top: 3px dashed rgb(104, 71, 71);
+    }
+
+    .contact-us .hr9 {
+        width: 30%;
+        margin: 3px auto;
+        border-radius: 50%;
+        border-top: 2px dashed rgb(104, 71, 71);
+    }
+    .contact-us .contantcontactus .form .contantform .title h1 {
+        font-size: 20px;
+        left: 80px;
+        top: 3px;
+        color: rgb(99, 82, 56);
+        font-weight: bold;
+    
+    }
+    .contact-us .contantcontactus {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .contact-us .contantcontactus .map {
+        width: 35%;
+        height: 80%;
+    }
+
+}
