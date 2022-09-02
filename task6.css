@@ -556,6 +556,10 @@
         text-shadow: 2px 3px 3px rgb(107, 89, 66);
         margin: 10px 5px;
     }
+    .gallary .gallery-contant .gallerycontent .image img {
+        width: 150px;
+        height: 150px;
+    }
 
 }
 
@@ -589,7 +593,8 @@
     }
 
     .gallary .gallery-contant {
-        width: 100%;
+        width: 90%;
+        height: 10px;
     }
 
     .gallary .gallery-contant .head {
@@ -777,6 +782,17 @@ margin-bottom: 10px;
 /* ......................endsection contact us ......*/
 
 /* ......................start media section2 ....*/
+/* for tablet */
+@media(max-width : 768px){
+    .map iframe {
+        width: 320px;
+        height: 390px;
+    } 
+    .gallary .gallery-contant .gallerycontent #none {
+        display: none;
+       } 
+}
+
 /* .........................for mobile */
 @media(max-width :600px){
     .contact-us .contactustitle {
@@ -824,4 +840,17 @@ margin-bottom: 10px;
         height: 80%;
     }
 
+}
+.map iframe {
+    margin-top: 25px;
+}
+@media(max-width :600px){
+    .map iframe {
+        margin-top: 185px;
+        width: 170px;
+        height: 160px;
+    } 
+   .gallary .gallery-contant .gallerycontent #none {
+    display: none;
+   } 
 }
